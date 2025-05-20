@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 9 - Seletores CSS</title>
+    <style>
+        h1{ 
+            color: purple;
+            text-align: center;
+            
+        }
+        .texto-interno{
+            background-color: lightyellow;
+            border: solid 1px orange;
+
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p style="color: green; font-weight: bold;"> 
+        Este parágrafo tem estilo inline (Azul e Negrito)
+    </p>
+    <h1>Texto principal da Página</h1>
+    <p class="texto-interno" class=".caixa-destaque">
+        Este parágrafo tem estilo do CSS texto-interno
+        (fundo amarelo, borda laranja)
+    </p>
+    <hr>
+    <div id="secao-externa" class=".caixa-destaque">
+        <h2>Seção Estilizada externamente</h2>
+        <p class="paragrafo-externo">
+            Recebe estilos do CSS externo
+        </p>
+    </div>
+    <p >
+        Parágrafo para testar prioridade da cascata
+    </p>
+    <h3>recebe estilo.css</h3>
+    <p style="font-family: sans-serif; font-size: 22px; text-align: right;" >
+     Esse parágrafo tem fonte diferente
+    </p>
+    <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">CSS</a>
+    
+</body>
+</html>
